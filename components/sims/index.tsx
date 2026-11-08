@@ -6,6 +6,9 @@ import { BetaBinomial, DeltaLab, MissingLab, MleLab, SimpsonLab } from "./sims3"
 import { CollinearityLab, LeastSquaresLab, LinearSystems, MatrixTransform, VectorLab } from "./sims4";
 import { CovarianceLab, EigenLab, GdNewtonLab, GradientLab, TaylorLab } from "./sims5";
 import { FwlLab, GmmLab, LagrangeLab, OlsLab, RobustSeLab } from "./sims6";
+import { ScienceTable, SpilloverLab, EstimandsLab, RoyLab, RandomisationLab } from "./sims7";
+import { NeymanLab, FisherLab, BlockingLab, RegAdjustLab, ClusterLab } from "./sims8";
+import { NoncomplianceLab, OverlapLab, PscoreLab, IpwLab, AipwLab } from "./sims9";
 
 const SIMS: Record<string, ComponentType> = {
   "probability-rules": ProbabilityRules,
@@ -38,6 +41,21 @@ const SIMS: Record<string, ComponentType> = {
   fwl: FwlLab,
   "robust-se": RobustSeLab,
   gmm: GmmLab,
+  "science-table": ScienceTable,
+  spillovers: SpilloverLab,
+  estimands: EstimandsLab,
+  roy: RoyLab,
+  randomisation: RandomisationLab,
+  neyman: NeymanLab,
+  fisher: FisherLab,
+  blocking: BlockingLab,
+  "regression-adjustment": RegAdjustLab,
+  cluster: ClusterLab,
+  noncompliance: NoncomplianceLab,
+  overlap: OverlapLab,
+  pscore: PscoreLab,
+  ipw: IpwLab,
+  aipw: AipwLab,
 };
 
 export default function Sim({ slug }: { slug: string }) {
