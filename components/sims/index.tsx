@@ -9,6 +9,9 @@ import { FwlLab, GmmLab, LagrangeLab, OlsLab, RobustSeLab } from "./sims6";
 import { ScienceTable, SpilloverLab, EstimandsLab, RoyLab, RandomisationLab } from "./sims7";
 import { NeymanLab, FisherLab, BlockingLab, RegAdjustLab, ClusterLab } from "./sims8";
 import { NoncomplianceLab, OverlapLab, PscoreLab, IpwLab, AipwLab } from "./sims9";
+import { DagBuilder, FactorisationLab, JunctionsLab, DSepLab, ScmLab } from "./sims10";
+import { DoOperatorLab, BackdoorLab, BadControlsLab, FrontdoorLab, DoCalculusLab } from "./sims11";
+import { IdentificationLab, SelectionLab, MediationLab, CounterfactualLab, SwigLab } from "./sims12";
 
 const SIMS: Record<string, ComponentType> = {
   "probability-rules": ProbabilityRules,
@@ -56,6 +59,21 @@ const SIMS: Record<string, ComponentType> = {
   pscore: PscoreLab,
   ipw: IpwLab,
   aipw: AipwLab,
+  "dag-builder": DagBuilder,
+  factorisation: FactorisationLab,
+  junctions: JunctionsLab,
+  "d-separation": DSepLab,
+  scm: ScmLab,
+  "do-operator": DoOperatorLab,
+  backdoor: BackdoorLab,
+  "bad-controls": BadControlsLab,
+  frontdoor: FrontdoorLab,
+  "do-calculus": DoCalculusLab,
+  identification: IdentificationLab,
+  "selection-bias": SelectionLab,
+  mediation: MediationLab,
+  counterfactual: CounterfactualLab,
+  swig: SwigLab,
 };
 
 export default function Sim({ slug }: { slug: string }) {
