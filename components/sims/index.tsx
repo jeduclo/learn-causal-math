@@ -12,6 +12,10 @@ import { NoncomplianceLab, OverlapLab, PscoreLab, IpwLab, AipwLab } from "./sims
 import { DagBuilder, FactorisationLab, JunctionsLab, DSepLab, ScmLab } from "./sims10";
 import { DoOperatorLab, BackdoorLab, BadControlsLab, FrontdoorLab, DoCalculusLab } from "./sims11";
 import { IdentificationLab, SelectionLab, MediationLab, CounterfactualLab, SwigLab } from "./sims12";
+import { IvIntroLab, WaldLab, LateLab, TslsLab, WeakIvLab } from "./sims13";
+import { OverIdLab, Did2x2Lab, EventStudyLab, TwfeLab, BaconLab } from "./sims14";
+import { CsDidLab, DddLab, RdSharpLab, LocalPolyLab, RdBandwidthLab } from "./sims15";
+import { RdFuzzyLab, RdValidityLab, RkdLab, BoundsLab, DesignChooser } from "./sims16";
 
 const SIMS: Record<string, ComponentType> = {
   "probability-rules": ProbabilityRules,
@@ -74,6 +78,26 @@ const SIMS: Record<string, ComponentType> = {
   mediation: MediationLab,
   counterfactual: CounterfactualLab,
   swig: SwigLab,
+  "iv-intro": IvIntroLab,
+  "wald": WaldLab,
+  "late": LateLab,
+  "tsls": TslsLab,
+  "weak-iv": WeakIvLab,
+  "overid": OverIdLab,
+  "did-2x2": Did2x2Lab,
+  "event-study": EventStudyLab,
+  "twfe": TwfeLab,
+  "bacon": BaconLab,
+  "cs-did": CsDidLab,
+  "ddd": DddLab,
+  "rd-sharp": RdSharpLab,
+  "local-poly": LocalPolyLab,
+  "rd-bandwidth": RdBandwidthLab,
+  "rd-fuzzy": RdFuzzyLab,
+  "rd-validity": RdValidityLab,
+  "rkd": RkdLab,
+  "bounds": BoundsLab,
+  "design-chooser": DesignChooser,
 };
 
 export default function Sim({ slug }: { slug: string }) {
