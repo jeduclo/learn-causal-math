@@ -16,6 +16,10 @@ import { IvIntroLab, WaldLab, LateLab, TslsLab, WeakIvLab } from "./sims13";
 import { OverIdLab, Did2x2Lab, EventStudyLab, TwfeLab, BaconLab } from "./sims14";
 import { CsDidLab, DddLab, RdSharpLab, LocalPolyLab, RdBandwidthLab } from "./sims15";
 import { RdFuzzyLab, RdValidityLab, RkdLab, BoundsLab, DesignChooser } from "./sims16";
+import { MatchingLab, PsMatchLab, BalanceLab, EntropyBalanceLab, SynthLab } from "./sims17";
+import { ScPlaceboLab, InfluenceLab, EfficiencyLab, OrthogonalityLab, DmlLab } from "./sims18";
+import { DmlPlrLab, MetaLearnersLab, CausalTreeLab, PolicyLab, SensitivityLab } from "./sims19";
+import { DynamicLab, InterferenceLab, DiscoveryLab, MultipleTestingLab, CapstoneLab } from "./sims20";
 
 const SIMS: Record<string, ComponentType> = {
   "probability-rules": ProbabilityRules,
@@ -98,6 +102,26 @@ const SIMS: Record<string, ComponentType> = {
   "rkd": RkdLab,
   "bounds": BoundsLab,
   "design-chooser": DesignChooser,
+  "matching": MatchingLab,
+  "ps-match": PsMatchLab,
+  "balance": BalanceLab,
+  "entropy-balance": EntropyBalanceLab,
+  "synth": SynthLab,
+  "sc-placebo": ScPlaceboLab,
+  "influence": InfluenceLab,
+  "efficiency": EfficiencyLab,
+  "orthogonality": OrthogonalityLab,
+  "dml": DmlLab,
+  "dml-plr": DmlPlrLab,
+  "meta-learners": MetaLearnersLab,
+  "causal-tree": CausalTreeLab,
+  "policy": PolicyLab,
+  "sensitivity": SensitivityLab,
+  "dynamic": DynamicLab,
+  "interference": InterferenceLab,
+  "discovery": DiscoveryLab,
+  "multiple-testing": MultipleTestingLab,
+  "capstone": CapstoneLab,
 };
 
 export default function Sim({ slug }: { slug: string }) {
